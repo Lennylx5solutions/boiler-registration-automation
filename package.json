@@ -1,0 +1,10 @@
+{
+  "name": "boiler-registration-automation",
+  "version": "1.0.0",
+  "description": "Demo: AI reads boiler serial plates and registers warranties on manufacturer portals, with Joblogic and WhatsApp reporting.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "@anthropic-ai/sdk": "^0.133.0", "express": "^5.2.1" },
+  "license": "UNLICENSED",
+  "private": true
+}

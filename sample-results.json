@@ -1,0 +1,23 @@
+{
+  "serial-1": {
+    "serial": "21233400100259871234N5",
+    "model": "Combi HX 832",
+    "readable": true,
+    "confidence": "high",
+    "issue": ""
+  },
+  "serial-2": {
+    "serial": "21233400100261004417N3",
+    "model": "Combi HX 835",
+    "readable": true,
+    "confidence": "high",
+    "issue": ""
+  },
+  "serial-3": {
+    "serial": "21233400100???????????",
+    "model": "Combi HX 832",
+    "readable": false,
+    "confidence": "low",
+    "issue": "Glare washes out the serial's last characters; overall image is blurred."
+  }
+}

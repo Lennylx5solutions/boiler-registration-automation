@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Practice registration portal</title>
+<style>
+  body{margin:0;font:14px/1.4 system-ui,sans-serif;background:#eef1f4;color:#1d2733}
+  header{background:#24313f;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
+  header b{font-size:15px}
+  header span{font-size:11px;opacity:.75}
+  main{padding:14px 16px}
+  h1{font-size:16px;margin:0 0 10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+  label{display:block;font-size:11px;font-weight:600;color:#4a5866;margin-bottom:2px}
+  input,select{width:100%;box-sizing:border-box;padding:6px 8px;border:1px solid #c3ccd5;border-radius:5px;font:inherit;background:#fff}
+  .full{grid-column:1/-1}
+  .file{display:flex;gap:8px;align-items:center}
+  .file div{flex:1;padding:6px 8px;border:1px dashed #9aa7b4;border-radius:5px;background:#fff;color:#6b7a88;font-size:12px}
+  button{margin-top:12px;background:#1f7a4d;color:#fff;border:0;border-radius:6px;padding:9px 18px;font-weight:700;font-size:14px}
+  .focus{outline:3px solid #ffb800;outline-offset:1px}
+  #done{display:none;text-align:center;padding:30px 10px}
+  #done .tick{font-size:46px;color:#1f7a4d}
+  #done .ref{font:700 18px ui-monospace,monospace;margin:8px 0}
+  #done a{display:inline-block;margin-top:10px;padding:8px 14px;border:1px solid #1f7a4d;border-radius:6px;color:#1f7a4d;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<header><b id="brand">Manufacturer Installer Portal</b><span>PRACTICE COPY · test form, nothing is registered</span></header>
+<main>
+  <form id="f" onsubmit="return false">
+    <h1 id="title">Register a new boiler installation</h1>
+    <div class="grid">
+      <div><label>Installer company</label><input id="company"></div>
+      <div><label>Gas Safe number</label><input id="gassafe"></div>
+      <div><label>Engineer (as registered)</label><select id="engineer"><option value="">Select…</option><option>Darren Walsh</option><option>Michael Byrne</option><option>Sam Okafor</option></select></div>
+      <div><label>Installation date</label><input id="date"></div>
+      <div><label>Customer name</label><input id="customer"></div>
+      <div><label>Postcode</label><input id="postcode"></div>
+      <div class="full"><label>Installation address</label><input id="address"></div>
+      <div><label>Boiler serial number</label><input id="serial"></div>
+      <div><label>Warranty</label><select id="warranty"><option value="">Select…</option><option>2 years</option><option>5 years</option><option>10 years</option></select></div>
+      <div class="full" id="docrow"><label>Contract document</label><div class="file"><div id="doc">No file chosen</div></div></div>
+    </div>
+    <button id="submit">Submit registration</button>
+  </form>
+  <div id="done">
+    <div class="tick">✓</div>
+    <div>Registration complete</div>
+    <div class="ref" id="ref"></div>
+    <div id="cover"></div>
+    <a href="#" id="cert">⬇ Warranty certificate (PDF)</a>
+  </div>
+</main>
+</body>
+</html>
